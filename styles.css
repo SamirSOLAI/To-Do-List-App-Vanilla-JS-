@@ -1,0 +1,175 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d7d7e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* To-Do Container */
+.todo-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  flex: 1; /* Makes the input take up available space */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; /* Removes the rounded corners on the right side */
+  height: 100%; /* Ensures height matches the button */
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+button {
+  width: 25%;
+  background-color: #000000;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex-shrink: 0; /* Prevents the button from shrinking */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0; /* Removes the rounded corners on the left side */
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+.buttonPriority:hover {
+  background-color: #6384df;
+}
+
+.buttonDelete:hover {
+  background-color: #eb8394;
+}
+
+.done-btn {
+  color: rgb(136, 239, 116);
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  font-size: 12px;
+  line-height: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.delete-btn {
+  color: rgb(146, 112, 112);
+  width: 25px;
+  background-color: rgb(255, 255, 255);
+  height: 25px;
+  font-size: 12px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  line-height: 0;
+  display: flex;
+}
+
+.priority-btn {
+  color: rgb(42, 136, 153);
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  height: 25px;
+  margin-left: 0;
+  font-size: 12px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  line-height: 0;
+  display: flex;
+}
+
+#add-button {
+  color: rgb(255, 255, 255);
+}
+/* To-Do List */
+ul {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+ul li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ul li button {
+  background-color: #1ecf76;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+} */
+
+/* ul li .delete-btn:hover {
+  background-color: #c9302c;
+} */
+
+#delete-all {
+  background-color: #f18989; /* Bright   for attention */
+  color: white; /* Contrast text color */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Add padding for a larger, clickable button */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Make the text slightly larger */
+  font-weight: bold; /* Bold text for visibility */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+  width: 130px;
+}
+
+#todo-input {
+  font-style: italic;
+  width: 450px;
+}
+
+.crossed-out {
+  text-decoration: line-through;
+}
